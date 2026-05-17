@@ -1,6 +1,6 @@
 // Sua BRIDGE_BASE_URL sau khi bridge chay tren PC.
 // Voi dien thoai, khong dung 127.0.0.1; hay dung IP LAN hoac IP Tailscale cua PC.
-var BRIDGE_BASE_URL = "http://192.168.100.55:8787";
+var BRIDGE_BASE_URL = "http://100.96.179.70:8787";
 var BRIDGE_READ_TOKEN = "";
 
 function bridgeUrl(path, params) {

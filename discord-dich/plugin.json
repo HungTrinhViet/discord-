@@ -2,8 +2,8 @@
   "metadata": {
     "name": "Discord Dịch",
     "author": "local",
-    "version": 7,
-    "source": "http://192.168.100.55:8787",
+    "version": 8,
+    "source": "http://100.96.179.70:8787",
     "regexp": ".*",
     "description": "Đọc bản dịch đã sync từ Discord qua bridge cá nhân",
     "locale": "vi_VN",
