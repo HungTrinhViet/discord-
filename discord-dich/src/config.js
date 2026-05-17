@@ -19,6 +19,18 @@ function bridgeJson(path, params) {
   return response.json();
 }
 
+function toNovelList(items) {
+  return (items || []).map(function (item) {
+    return {
+      name: item.name,
+      link: sourceNovelUrl(item.link),
+      host: BRIDGE_BASE_URL,
+      cover: item.cover || "",
+      description: item.description || ""
+    };
+  });
+}
+
 function sourceNovelUrl(novelKey) {
   return BRIDGE_BASE_URL.replace(/\/+$/, "") + "/source/novel/" + encodeURIComponent(String(novelKey || ""));
 }
