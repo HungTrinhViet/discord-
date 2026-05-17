@@ -1,18 +1,15 @@
-# Discord Dich Vbook Plugin
+# Discord Dịch Vbook Repository
 
-Private Vbook source plugin for reading translated chapters from `vbook-discord-bridge`.
-
-Before installing on your phone, edit:
+Use this URL in Vbook extension repository/add-source flow:
 
 ```text
-src/config.js
+https://raw.githubusercontent.com/HungTrinhViet/discord-/master/plugin.json
 ```
 
-Set:
+If Vbook asks for a direct ZIP file, use:
 
-```js
-var BRIDGE_BASE_URL = "http://YOUR_PC_IP_OR_TAILSCALE_IP:8787";
-var BRIDGE_READ_TOKEN = "YOUR_READ_TOKEN_FROM_.env";
+```text
+https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/plugin.zip
 ```
 
-Do not commit your real `BRIDGE_READ_TOKEN` to a public repository.
+Do not use GitHub's generated "Download ZIP" file for the repository. That ZIP contains a top-level folder and Vbook cannot install it as a plugin package.

@@ -1,20 +1,19 @@
 {
   "metadata": {
-    "name": "Discord Dịch",
     "author": "local",
-    "version": 1,
-    "source": "http://127.0.0.1:8787",
-    "regexp": ".*",
-    "description": "Đọc bản dịch đã sync từ Discord qua bridge cá nhân",
-    "locale": "vi_VN",
-    "language": "javascript",
-    "type": "novel"
+    "description": "Private Vbook extension repository for Discord Dịch"
   },
-  "script": {
-    "home": "home.js",
-    "search": "search.js",
-    "detail": "detail.js",
-    "toc": "toc.js",
-    "chap": "chap.js"
-  }
+  "data": [
+    {
+      "name": "Discord Dịch",
+      "author": "local",
+      "path": "https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/plugin.zip",
+      "version": 2,
+      "source": "http://192.168.100.55:8787",
+      "icon": "https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/icon.png",
+      "description": "Đọc bản dịch đã sync từ Discord qua bridge cá nhân",
+      "type": "novel",
+      "locale": "vi_VN"
+    }
+  ]
 }

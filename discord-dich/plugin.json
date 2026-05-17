@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Discord Dịch",
+    "author": "local",
+    "version": 2,
+    "source": "http://192.168.100.55:8787",
+    "regexp": ".*",
+    "description": "Đọc bản dịch đã sync từ Discord qua bridge cá nhân",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
