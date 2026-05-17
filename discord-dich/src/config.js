@@ -1,11 +1,11 @@
-// Sua 2 dong nay sau khi bridge chay tren PC.
+// Sua BRIDGE_BASE_URL sau khi bridge chay tren PC.
 // Voi dien thoai, khong dung 127.0.0.1; hay dung IP LAN hoac IP Tailscale cua PC.
 var BRIDGE_BASE_URL = "http://192.168.100.55:8787";
-var BRIDGE_READ_TOKEN = "change-this-reader-token";
+var BRIDGE_READ_TOKEN = "";
 
 function bridgeUrl(path, params) {
   var query = params || {};
-  query.token = BRIDGE_READ_TOKEN;
+  if (BRIDGE_READ_TOKEN) query.token = BRIDGE_READ_TOKEN;
   var parts = [];
   for (var key in query) {
     if (query[key] === undefined || query[key] === null || query[key] === "") continue;
