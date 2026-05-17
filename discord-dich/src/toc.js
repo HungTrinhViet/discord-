@@ -7,7 +7,7 @@ function execute(url) {
   var data = (json.data || []).map(function (item) {
     return {
       name: item.name,
-      url: sourceChapterUrl(item.url),
+      url: item.url,
       host: BRIDGE_BASE_URL
     };
   });

@@ -6,7 +6,8 @@ function execute(key, page) {
   var data = (json.data || []).map(function (item) {
     return {
       name: item.name,
-      link: sourceNovelUrl(item.link),
+      link: item.link,
+      url: item.link,
       host: BRIDGE_BASE_URL,
       cover: item.cover || "",
       description: item.description || ""
