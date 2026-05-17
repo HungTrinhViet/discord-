@@ -7,8 +7,8 @@
     {
       "name": "Discord Dịch",
       "author": "local",
-      "path": "https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/plugin.zip",
-      "version": 2,
+      "path": "https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/plugin-v2.zip",
+      "version": 3,
       "source": "http://192.168.100.55:8787",
       "icon": "https://raw.githubusercontent.com/HungTrinhViet/discord-/master/discord-dich/icon.png",
       "description": "Đọc bản dịch đã sync từ Discord qua bridge cá nhân",
