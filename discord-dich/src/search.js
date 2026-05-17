@@ -1,7 +1,16 @@
 load("config.js");
 
 function execute(key, page) {
-  var json = bridgeJson("/vbook/search", { key: key || "" });
+  var json = bridgeJson("/api/search", { key: key || "" });
   if (!json.ok) return Response.error(json.error || "Bridge error");
-  return Response.success(json.data || [], json.next || null);
+  var data = (json.data || []).map(function (item) {
+    return {
+      name: item.name,
+      link: sourceNovelUrl(item.link),
+      host: BRIDGE_BASE_URL,
+      cover: item.cover || "",
+      description: item.description || ""
+    };
+  });
+  return Response.success(data, json.next || null);
 }

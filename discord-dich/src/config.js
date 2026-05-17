@@ -18,3 +18,17 @@ function bridgeJson(path, params) {
   var response = fetch(bridgeUrl(path, params));
   return response.json();
 }
+
+function sourceNovelUrl(novelKey) {
+  return BRIDGE_BASE_URL.replace(/\/+$/, "") + "/source/novel/" + encodeURIComponent(String(novelKey || ""));
+}
+
+function sourceChapterUrl(chapterId) {
+  return BRIDGE_BASE_URL.replace(/\/+$/, "") + "/source/chapter/" + encodeURIComponent(String(chapterId || ""));
+}
+
+function extractTail(value) {
+  var s = String(value || "").trim();
+  var idx = s.lastIndexOf("/");
+  return idx >= 0 ? decodeURIComponent(s.substring(idx + 1)) : s;
+}
